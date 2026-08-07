@@ -2,324 +2,530 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio | Fernando Montiel</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Fernando Montiel is a Computer Science graduate focused on backend development and building full-stack applications with React, Node.js, Firebase, APIs, databases, and cloud technologies."
+    />
+
+    <title>Fernando Montiel | Software Developer</title>
+
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <header class="hero">
-      <div class="container">
-        <span class="pill">Backend Developer • Full Stack Projects</span>
-        <h1>Fernando Montiel</h1>
-        <p class="subtitle">
-          Computer Science student focused on backend development and building
-          full-stack applications with Node.js, APIs, and cloud technologies.
-        </p>
+    <!-- Navigation -->
+    <header class="site-header">
+      <nav class="container navbar" aria-label="Main navigation">
+        <a
+          class="logo"
+          href="#home"
+          aria-label="Fernando Montiel home"
+        >
+          FM<span>.</span>
+        </a>
 
-        <div class="quick-links">
-          <a class="btn" href="#assignments">View Assignments</a>
-          <a
-            class="btn btn-outline"
-            href="https://github.com/FMontiel01/fernando-montiel-portfolio"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Portfolio Repo
-          </a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
-      </div>
+
+        <a
+          class="nav-button"
+          href="https://github.com/FMontiel01"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
+      </nav>
     </header>
 
-    <main class="container">
-      <section id="assignments" class="section">
-        <div class="section-title">
-          <h2>Projects</h2>
-          <p>
-            Live demos are deployed online, with source code available on
-            GitHub.
-          </p>
-        </div>
-
-        <div class="grid">
-          <!-- Sprint 1 -->
-          <article class="card">
-            <div class="badges">
-              <span class="badge">Sprint 1</span>
-              <span class="badge">HTML/CSS</span>
-            </div>
-            <h3>Me Assignment</h3>
-            <p>Intro/personal page assignment from Sprint 1.</p>
-
-            <div class="card-actions">
-              <a
-                class="btn small"
-                href="https://fmontiel01.github.io/me/"
-                target="_blank"
-                rel="noreferrer"
-                >Live (GitHub Pages)</a
-              >
-              <a
-                class="btn small btn-outline"
-                href="https://github.com/FMontiel01/me"
-                target="_blank"
-                rel="noreferrer"
-                >Code (GitHub)</a
-              >
-            </div>
-          </article>
-
-          <!-- Sprint 2 -->
-          <article class="card">
-            <div class="badges">
-              <span class="badge">Sprint 2</span>
-              <span class="badge">CSS/JS</span>
-            </div>
-            <h3>Lions & Tigers</h3>
-            <p>Dogs API Slideshow Assignment from Sprint 2.</p>
-
-            <div class="card-actions">
-              <a
-                class="btn small"
-                href="https://black-ground-05d8a821e.2.azurestaticapps.net/"
-                target="_blank"
-                rel="noreferrer"
-                >Live (Azure)</a
-              >
-              <a
-                class="btn small btn-outline"
-                href="https://github.com/FMontiel01/lions-tigers"
-                target="_blank"
-                rel="noreferrer"
-                >Code (GitHub)</a
-              >
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="badges">
-              <span class="badge">Sprint 2/3</span>
-              <span class="badge">Full Stack</span>
-              <span class="badge">API</span>
-            </div>
-            <h3>Monopoly Dice Roller</h3>
-            <p>
-              Full-stack Monopoly dice roller that uses a Node.js API to
-              generate dice results on the backend. The frontend communicates
-              with a deployed Azure API server to handle game logic and return
-              randomized dice values.
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">
+              Computer Science Graduate • Software Developer
             </p>
 
-            <div class="card-actions">
-              <a
-                class="btn small"
-                href="https://ashy-ocean-077316c1e.2.azurestaticapps.net"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live Demo
-              </a>
-              <a
-                class="btn small btn-outline"
-                href="https://github.com/FMontiel01/WebDiceRoller"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Frontend Code
-              </a>
-              <a
-                class="btn small btn-outline"
-                href="https://github.com/FMontiel01/monopoly-dice-api"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Backend API
-              </a>
-            </div>
-          </article>
+            <h1>
+              Hi, I’m Fernando.
+              <span>I build useful web applications.</span>
+            </h1>
 
-          <article class="card">
-            <div class="badges">
-              <span class="badge">Sprint 2</span>
-              <span class="badge">HTML/CSS</span>
-            </div>
-            <h3>Web Resume</h3>
-            <p>
-              Responsive web-based resume built with semantic HTML and custom
-              CSS, including a print-friendly layout that allows the resume to
-              be exported as a clean PDF.
+            <p class="hero-description">
+              I am a Computer Science graduate focused on backend
+              development, full-stack applications, APIs, databases,
+              and cloud technologies. I enjoy turning ideas into
+              practical software that solves real problems.
             </p>
 
-            <div class="card-actions">
+            <div class="hero-actions">
               <a
-                class="btn small"
-                href="https://calm-bush-0bbc1fb1e.4.azurestaticapps.net"
-                target="_blank"
-                rel="noreferrer"
+                class="button button-primary"
+                href="#projects"
               >
-                Live (Azure)
-              </a>
-              <a
-                class="btn small btn-outline"
-                href="https://github.com/FMontiel01/WebResume"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Code (GitHub)
-              </a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="badges">
-              <span class="badge">Sprint 4</span>
-              <span class="badge">Full Stack</span>
-              <span class="badge">Team Project</span>
-              <span class="badge">API</span>
-            </div>
-            <h3>Health Insurance Risk Calculator</h3>
-            <p>
-              Full-stack team project that calculates health insurance risk
-              based on user inputs such as age, BMI, blood pressure, and family
-              history. The frontend sends data to a Node.js API, where the
-              calculations are handled on the backend and deployed through
-              Microsoft Azure.
-            </p>
-
-            <div class="card-actions">
-              <a
-                class="btn small"
-                href="https://green-sky-0913dde1e.1.azurestaticapps.net"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live Demo
-              </a>
-              <a
-                class="btn small btn-outline"
-                href="https://github.com/FMontiel01/Health-Insurance-Risk-Calculator"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Frontend Code
-              </a>
-              <a
-                class="btn small btn-outline"
-                href="https://github.com/FMontiel01/Health-Insurance-Risk-Calculator-Server"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Backend API
-              </a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="badges">
-              <span class="badge">Final Project</span>
-              <span class="badge">Firebase</span>
-              <span class="badge">ICS Calendar</span>
-              <span class="badge">Team Project</span>
-            </div>
-
-            <h3>LewisCal</h3>
-
-            <p>
-              LewisCal is a calendar-sharing web app for Lewis University
-              courses. It allows users to create or view a course schedule,
-              generate an ICS calendar file, and copy a shareable calendar link
-              for apps like Google Calendar, Apple Calendar, and Microsoft
-              Outlook.
-            </p>
-
-            <div class="card-actions">
-              <a
-                class="btn small"
-                href="https://lewiscal-2909a.web.app"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live Demo
+                View My Projects
               </a>
 
               <a
-                class="btn small btn-outline"
-                href="https://github.com/FMontiel01/LewisCal"
+                class="button button-secondary"
+                href="https://github.com/FMontiel01"
                 target="_blank"
                 rel="noreferrer"
               >
-                Code (Github)
+                Visit GitHub
               </a>
             </div>
-          </article>
 
-          <!-- Template for future assignments -->
-          <article class="card muted">
-            <div class="badges">
-              <span class="badge">Future</span>
-              <span class="badge">Coming Soon</span>
-            </div>
-            <h3>Next Assignment</h3>
-            <p>
-              I’ll keep adding new web-based assignments here throughout the
-              course.
-            </p>
+            <div
+              class="hero-highlights"
+              aria-label="Developer highlights"
+            >
+              <div>
+                <strong>React</strong>
+                <span>Frontend</span>
+              </div>
 
-            <div class="card-actions">
-              <a class="btn small" href="#" onclick="return false;"
-                >Live (Azure)</a
-              >
-              <a class="btn small btn-outline" href="#" onclick="return false;"
-                >Code (GitHub)</a
-              >
+              <div>
+                <strong>Firebase</strong>
+                <span>Cloud & Data</span>
+              </div>
+
+              <div>
+                <strong>Node.js</strong>
+                <span>Backend APIs</span>
+              </div>
             </div>
-          </article>
+          </div>
+
+          <!-- Developer Code Card -->
+          <aside
+            class="developer-card"
+            aria-label="Developer profile summary"
+          >
+            <div class="code-window">
+              <div class="window-controls" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <pre><code><span class="code-keyword">const</span> developer = {
+  name: <span class="code-string">"Fernando Montiel"</span>,
+  degree: <span class="code-string">"Computer Science"</span>,
+  focus: <span class="code-string">"Backend Development"</span>,
+  skills: [
+    <span class="code-string">"React"</span>,
+    <span class="code-string">"Node.js"</span>,
+    <span class="code-string">"Firebase"</span>,
+    <span class="code-string">"SQL"</span>
+  ],
+  availableFor: <span class="code-string">"Software Opportunities"</span>
+};</code></pre>
+            </div>
+          </aside>
         </div>
       </section>
 
-      <section class="section">
-        <div class="section-title">
-          <h2>How this portfolio is organized</h2>
-          <p>Simple hub site + links to each project.</p>
-        </div>
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div>
+            <p class="section-label">About Me</p>
 
-        <div class="info">
-          <div class="info-box">
-            <h4>Hosted on Azure</h4>
+            <h2>
+              Building my career one project at a time.
+            </h2>
+          </div>
+
+          <div class="about-copy">
             <p>
-              This portfolio hub is hosted on Microsoft Azure and is accessible
-              through HTTPS.
+              I am a Computer Science graduate with experience
+              creating responsive websites, full-stack applications,
+              backend APIs, and Firebase-powered systems.
+            </p>
+
+            <p>
+              My goal is to begin my career as a backend software
+              developer. I continue strengthening my skills through
+              personal projects, team projects, and applications
+              created for real users.
+            </p>
+
+            <p>
+              I am especially interested in opportunities where I can
+              work with backend systems, APIs, databases, cloud
+              technologies, and full-stack application development.
             </p>
           </div>
-          <div class="info-box">
-            <h4>External CSS</h4>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Technical Skills</p>
+
+              <h2>Technologies I work with</h2>
+            </div>
+
             <p>
-              This site uses an external linked CSS file
-              (<code>styles.css</code>) for styling.
+              A growing toolkit for designing, developing, deploying,
+              and maintaining modern web applications.
             </p>
           </div>
-          <div class="info-box">
-            <h4>Easy updates</h4>
+
+          <div class="skills-grid">
+            <!-- Frontend Skills -->
+            <article class="skill-card">
+              <p class="skill-number">01</p>
+
+              <h3>Frontend</h3>
+
+              <div class="skill-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Responsive Design</span>
+              </div>
+            </article>
+
+            <!-- Backend Skills -->
+            <article class="skill-card">
+              <p class="skill-number">02</p>
+
+              <h3>Backend</h3>
+
+              <div class="skill-list">
+                <span>Node.js</span>
+                <span>REST APIs</span>
+                <span>Python</span>
+                <span>Java</span>
+                <span>C++</span>
+              </div>
+            </article>
+
+            <!-- Cloud and Data Skills -->
+            <article class="skill-card">
+              <p class="skill-number">03</p>
+
+              <h3>Cloud & Data</h3>
+
+              <div class="skill-list">
+                <span>Firebase</span>
+                <span>Firestore</span>
+                <span>Microsoft Azure</span>
+                <span>SQL</span>
+                <span>Git & GitHub</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Featured Work</p>
+
+              <h2>Projects I’m proud of</h2>
+            </div>
+
             <p>
-              To add a new assignment, I just add another card with the Azure +
-              GitHub links.
+              Applications that demonstrate my experience with
+              frontend development, backend logic, databases,
+              authentication, APIs, and cloud deployment.
             </p>
           </div>
+
+          <div class="projects-grid">
+            <!-- Mobile Mechanic Project -->
+            <article class="project-card project-featured">
+              <div class="project-visual mechanic-visual">
+                <span>Featured Project</span>
+                <strong>Mobile Mechanic</strong>
+              </div>
+
+              <div class="project-content">
+                <div class="project-tags">
+                  <span>React</span>
+                  <span>Firebase</span>
+                  <span>Firestore</span>
+                  <span>Authentication</span>
+                </div>
+
+                <h3>Mobile Mechanic Web App</h3>
+
+                <p>
+                  A full-stack service-booking website created for a
+                  mobile mechanic business. Customers can submit
+                  service requests, while an authenticated admin can
+                  review and manage requests through a protected
+                  dashboard.
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="https://mechanic-react-webapp.web.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live Demo
+                    <span aria-hidden="true">↗</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/FMontiel01/mechanic-webapp"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source Code
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- LewisCal Project -->
+            <article class="project-card">
+              <div class="project-visual calendar-visual">
+                <span>Team Project</span>
+                <strong>LewisCal</strong>
+              </div>
+
+              <div class="project-content">
+                <div class="project-tags">
+                  <span>Firebase</span>
+                  <span>ICS Calendar</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <h3>LewisCal</h3>
+
+                <p>
+                  A calendar-sharing web application for Lewis
+                  University courses. Users can create or view
+                  schedules, generate ICS calendar files, and copy
+                  shareable calendar links for popular calendar
+                  applications.
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="https://lewiscal-2909a.web.app"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live Demo
+                    <span aria-hidden="true">↗</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/FMontiel01/LewisCal"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source Code
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Health Insurance Risk Calculator -->
+            <article class="project-card">
+              <div class="project-visual health-visual">
+                <span>Full-Stack Project</span>
+                <strong>Risk Calculator</strong>
+              </div>
+
+              <div class="project-content">
+                <div class="project-tags">
+                  <span>Node.js</span>
+                  <span>REST API</span>
+                  <span>Azure</span>
+                </div>
+
+                <h3>
+                  Health Insurance Risk Calculator
+                </h3>
+
+                <p>
+                  A team-built full-stack application that calculates
+                  health insurance risk using information entered by
+                  the user. The frontend communicates with a deployed
+                  Node.js API that processes the data and returns the
+                  results.
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="https://green-sky-0913dde1e.1.azurestaticapps.net"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live Demo
+                    <span aria-hidden="true">↗</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/FMontiel01/Health-Insurance-Risk-Calculator"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Frontend
+                    <span aria-hidden="true">↗</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/FMontiel01/Health-Insurance-Risk-Calculator-Server"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Backend
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Monopoly Dice Roller -->
+            <article class="project-card">
+              <div class="project-visual dice-visual">
+                <span>Backend API</span>
+                <strong>Dice Roller</strong>
+              </div>
+
+              <div class="project-content">
+                <div class="project-tags">
+                  <span>Node.js</span>
+                  <span>REST API</span>
+                  <span>Azure</span>
+                </div>
+
+                <h3>Monopoly Dice Roller</h3>
+
+                <p>
+                  A full-stack dice roller that sends requests to a
+                  Node.js API. The backend generates randomized dice
+                  values and returns the game results to the deployed
+                  frontend.
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="https://ashy-ocean-077316c1e.2.azurestaticapps.net"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live Demo
+                    <span aria-hidden="true">↗</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/FMontiel01/WebDiceRoller"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Frontend
+                    <span aria-hidden="true">↗</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/FMontiel01/monopoly-dice-api"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Backend
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="more-projects">
+            <p>
+              More projects and source code are available on my
+              GitHub profile.
+            </p>
+
+            <a
+              class="button button-secondary"
+              href="https://github.com/FMontiel01?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View All Repositories
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section">
+        <div class="container contact-card">
+          <div>
+            <p class="section-label">Let’s Connect</p>
+
+            <h2>
+              I’m ready for my next opportunity.
+            </h2>
+
+            <p>
+              I am seeking software development opportunities where I
+              can contribute my skills while continuing to grow in
+              backend development, APIs, databases, full-stack
+              applications, and cloud technologies.
+            </p>
+          </div>
+
+          <a
+            class="button button-primary"
+            href="https://github.com/FMontiel01"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Connect on GitHub
+          </a>
         </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-      <div class="container footer-row">
-        <p>© <span id="year"></span> Fernando Montiel</p>
-        <p class="muted-text">
-          Built with HTML, CSS, JavaScript • Hosted on Azure
+      <div class="container footer-content">
+        <p>
+          © <span id="year"></span> Fernando Montiel
+        </p>
+
+        <p>
+          Built with HTML, CSS, and JavaScript
         </p>
       </div>
     </footer>
 
     <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
+      const yearElement = document.getElementById("year");
+
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
     </script>
   </body>
 </html>
